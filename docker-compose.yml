@@ -1,0 +1,11 @@
+version: '3.10'
+services:
+  webapp:
+    build: ./web
+    container_name: auto-f-react
+    ports:
+      - "8082:3000"
+    volumes:
+      - ./web:/usr/src/app
+    stdin_open: true
+    tty: true
